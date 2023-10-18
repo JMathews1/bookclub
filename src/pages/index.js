@@ -33,7 +33,7 @@ const codeStyles = {
 
 const imageStyles = {
   width: "100%",      // Take the full width on mobile
-  maxWidth: "200px",  // But restrict it on larger screens
+  maxWidth: "500px",  // But restrict it on larger screens
   height: "auto",     // Keep the original aspect ratio
   display: "block",   // To avoid inline gaps
   margin: "0 auto",   // Center it horizontally
