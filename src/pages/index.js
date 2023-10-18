@@ -1,5 +1,5 @@
 import * as React from "react"
-import bookImage from '../images/icon.png';  
+import bookImage from '../images/running.jpg';  
 
 const pageStyles = {
   color: "#232129",
@@ -32,17 +32,17 @@ const codeStyles = {
 }
 
 const imageStyles = {
-  width: "100%",      // Take the full width on mobile
-  maxWidth: "500px",  // But restrict it on larger screens
-  height: "auto",     // Keep the original aspect ratio
-  display: "block",   // To avoid inline gaps
-  margin: "0 auto",   // Center it horizontally
+  width: "100%",
+  maxWidth: "500px", 
+  height: "auto",     
+  display: "block",   
+  margin: "0 auto",   
 }
 
 const IndexPage = () => {
   // State to hold the book details.
   const [book, setBook] = React.useState({
-    title: "Sample Book Title", 
+    title: "What I Talk About When I Talk About Running: Haruki Murakami", 
     image: bookImage, 
   })
 
