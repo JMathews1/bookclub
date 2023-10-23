@@ -42,7 +42,7 @@ const imageStyles = {
 const IndexPage = () => {
   // State to hold the book details.
   const [book, setBook] = React.useState({
-    title: "I'm glad my Mom died: Jeanette McCready", 
+    title: "What I Talk About When I Talk About Running: Haruki Murakami", 
     image: bookImage, 
   })
 
