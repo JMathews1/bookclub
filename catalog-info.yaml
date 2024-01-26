@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: main-service
+  description: this is a main service i want to set up
+  tags:
+    - go
+    - website
+spec:
+  type: service
+  lifecycle: production
+  owner: team-2
