@@ -12,7 +12,7 @@ import CommentsPage from "./comments";
 
 const IndexPage = () => {
   const [book, setBook] = useState({
-    title: "What I Talk About",
+    title: "What I Talk About When I talk about running ",
     image: bookImage,
   });
 
@@ -98,7 +98,6 @@ const IndexPage = () => {
           <ul className="glide__slides">
             <li className="glide__slide">      
               <h1>Book Club - Current Book</h1>
-              <h2 >{book.title}</h2>
               <img
                 src={book.image}
                 alt={`Cover of the book ${book.title}`}
@@ -140,7 +139,7 @@ const IndexPage = () => {
             <li className="glide__slide">
 
               <form onSubmit={handleCommentSubmit} >
-                <h3>Please add comments that we can use as talking points on {book.title} </h3>
+                <h3>Please add comments that we can use as talking points on "{book.title} </h3>
                 <input  
                   className="input1"
                   type="text"

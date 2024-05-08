@@ -21,7 +21,7 @@ const SuggestionsPage = () => {
         <div>
             <h1>Book Suggestions</h1>
             {isLoading ? <p>Loading...</p> : (
-                <ul>
+                <ul className='suggestionsList'>
                     {suggestions.map((suggestion, index) => (
                         <li key={index}>
                             <strong>Title:</strong> {suggestion.title}<br/>
