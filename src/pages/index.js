@@ -98,7 +98,6 @@ const IndexPage = () => {
           <ul className="glide__slides">
             <li className="glide__slide">      
               <h1>Book Club - Current Book</h1>
-              <h2 >{book.title}</h2>
               <img
                 src={book.image}
                 alt={`Cover of the book ${book.title}`}

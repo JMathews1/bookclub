@@ -85,3 +85,8 @@ top: 10%
   max-width: 10%;
 }
 
+
+.suggestionsList{
+  max-height: 80vh;
+  overflow: scroll;
+}
