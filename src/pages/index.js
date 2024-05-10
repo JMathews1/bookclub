@@ -136,7 +136,7 @@ const IndexPage = () => {
                 </button>
               </form>
             </li>
-            <li className="glide__slide">
+            {/* <li className="glide__slide">
 
               <form onSubmit={handleCommentSubmit} >
                 <h3>Please add comments that we can use as talking points on "{book.title} </h3>
@@ -152,7 +152,7 @@ const IndexPage = () => {
                   Submit Comment
                 </button>
               </form>
-            </li>
+            </li> */}
             <li className="glide__slide">
               <SuggestionsPage />
             </li>
