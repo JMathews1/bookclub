@@ -1,12 +1,8 @@
 import React, { useState, useRef, useEffect } from "react";
 import bookImage from "../images/running.jpg";
-import HamburgerMenu from "../components/hamburgerMenu"; 
 import '../styles/styles.css'
 import SuggestionsPage from "./suggestions";
 
-import Glide from '@glidejs/glide'
-import '@glidejs/glide/dist/css/glide.core.min.css'; // For core styles
-import '@glidejs/glide/dist/css/glide.theme.min.css'
 import CommentsPage from "./comments";
 
 
@@ -15,15 +11,6 @@ const IndexPage = () => {
     title: "What I Talk About When I talk about running ",
     image: bookImage,
   });
-
-  useEffect(() => {
-    new Glide(".glide", {
-      peek: 0,
-      perView: 1,
-      type: "carousel"
-    }).mount();
-  }, []);
-
 
   // State for the first form
   const [suggestionFormState, setSuggestionFormState] = useState({
@@ -94,17 +81,16 @@ const IndexPage = () => {
   return (
     <main >
         <div className="glide">
-        <div className="glide__track" data-glide-el="track">
-          <ul className="glide__slides">
-            <li className="glide__slide">      
+          <div className="glide__slides">
+            <div className="glide__slide">      
               <h1>Book Club - Current Book</h1>
               <img
                 src={book.image}
                 alt={`Cover of the book ${book.title}`}
-                // style={{ width: "100%", maxWidth: "500px", height: "auto", display: "block", margin: "0 auto" }}
+                style={{ width: "100%", maxWidth: "500px", height: "auto", display: "block", margin: "0 auto" }}
               />
-              </li>
-            <li className="glide__slide">
+              </div>
+            <div className="glide__slide">
                 <form onSubmit={handleSuggestionSubmit} >
                 <h3>Please add suggestions for next month's book below </h3>
                 <input
@@ -135,7 +121,7 @@ const IndexPage = () => {
                   Suggest Book
                 </button>
               </form>
-            </li>
+            </div>
             {/* <li className="glide__slide">
 
               <form onSubmit={handleCommentSubmit} >
@@ -153,16 +139,15 @@ const IndexPage = () => {
                 </button>
               </form>
             </li> */}
-            <li className="glide__slide">
+            <div className="glide__slide"> 
               <SuggestionsPage />
-            </li>
+            </div>
             {/* <li className="glide__slide">
               <h4>comments section coming soon</h4>
               <CommentsPage />
             </li> */}
-          </ul>
+          </div>
         </div>
-      </div>
     </main>
   );
 };
