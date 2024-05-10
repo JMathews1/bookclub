@@ -156,10 +156,10 @@ const IndexPage = () => {
             <li className="glide__slide">
               <SuggestionsPage />
             </li>
-            <li className="glide__slide">
+            {/* <li className="glide__slide">
               <h4>comments section coming soon</h4>
               <CommentsPage />
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>
