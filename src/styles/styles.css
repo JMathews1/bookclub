@@ -13,7 +13,7 @@ body {
 .glide__track {
   width: 100%; 
   background: #fff2d1;
-  overflow: visible;
+  overflow: visible !important;
 
 }
 
