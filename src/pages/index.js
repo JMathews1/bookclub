@@ -139,7 +139,7 @@ const IndexPage = () => {
                 </button>
               </form>
             </li> */}
-            <div className="glide__slide"> 
+            <div className=""> 
               <SuggestionsPage />
             </div>
             {/* <li className="glide__slide">
